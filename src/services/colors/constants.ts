@@ -1,8 +1,14 @@
-// Notion's palette, for values (select options, tags, board columns): styles/_notion-colors.scss
-export type NotionColor = 'gray' | 'brown' | 'orange' | 'yellow' | 'green' | 'blue' | 'purple' | 'pink' | 'red';
+// The value palette (select options, tags, board columns): Notion's 9 colors plus
+// the hues of the icon palette (src/features/icons), for styles/_notion-colors.scss
+export type NotionColor =
+	| 'gray' | 'slate' | 'brown' | 'orange' | 'amber' | 'yellow' | 'olive' | 'lime'
+	| 'green' | 'mint' | 'teal' | 'cyan' | 'sky' | 'blue' | 'navy' | 'indigo' | 'violet'
+	| 'purple' | 'fuchsia' | 'pink' | 'rose' | 'red' | 'coral';
 
 export const NOTION_COLORS: NotionColor[] = [
-	'gray', 'brown', 'orange', 'yellow', 'green', 'blue', 'purple', 'pink', 'red',
+	'gray', 'slate', 'brown', 'orange', 'amber', 'yellow', 'olive', 'lime', 'green', 'mint',
+	'teal', 'cyan', 'sky', 'blue', 'navy', 'indigo', 'violet', 'purple', 'fuchsia', 'pink',
+	'rose', 'red', 'coral',
 ];
 
 // Key of the value → color map in the plugin data.json

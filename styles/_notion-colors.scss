@@ -5,28 +5,59 @@
 // ─── Notion Color Maps ────────────────────────────────────────────────────────
 // (chip background, chip text) per color and theme
 
+// Notion's 9 original colors keep their literal values; the 14 added hues are
+// derived from the icon palette (styles/icons.scss): bg is the hue at low alpha,
+// text the hue darkened (light theme) or a near-white tinted with it (dark theme)
 $notion-light: (
 	'gray': (rgba(28, 19, 1, 0.11), rgb(73, 72, 70)),
+	'slate': (rgba(100, 116, 139, 0.2), rgb(58, 67, 81)),
 	'brown': (rgba(127, 51, 0, 0.157), rgb(88, 68, 55)),
-	'yellow': (rgba(209, 156, 0, 0.282), rgb(101, 81, 33)),
 	'orange': (rgba(196, 88, 0, 0.204), rgb(106, 66, 34)),
+	'amber': (rgba(212, 145, 42, 0.2), rgb(123, 84, 24)),
+	'yellow': (rgba(209, 156, 0, 0.282), rgb(101, 81, 33)),
+	'olive': (rgba(127, 125, 58, 0.2), rgb(74, 73, 34)),
+	'lime': (rgba(122, 154, 46, 0.2), rgb(71, 89, 27)),
 	'green': (rgba(0, 96, 38, 0.157), rgb(42, 83, 60)),
+	'mint': (rgba(63, 160, 122, 0.2), rgb(37, 93, 71)),
+	'teal': (rgba(62, 138, 131, 0.2), rgb(36, 80, 76)),
+	'cyan': (rgba(47, 143, 175, 0.2), rgb(27, 83, 102)),
+	'sky': (rgba(59, 154, 217, 0.2), rgb(34, 89, 126)),
 	'blue': (rgba(0, 118, 217, 0.204), rgb(38, 74, 114)),
+	'navy': (rgba(47, 74, 122, 0.2), rgb(27, 43, 71)),
+	'indigo': (rgba(90, 99, 184, 0.2), rgb(52, 57, 107)),
+	'violet': (rgba(123, 92, 214, 0.2), rgb(71, 53, 124)),
 	'purple': (rgba(92, 0, 163, 0.14), rgb(44, 44, 43)),
+	'fuchsia': (rgba(179, 71, 184, 0.2), rgb(104, 41, 107)),
 	'pink': (rgba(183, 0, 78, 0.153), rgb(104, 53, 78)),
+	'rose': (rgba(208, 88, 122, 0.2), rgb(121, 51, 71)),
 	'red': (rgba(206, 24, 0, 0.165), rgb(109, 53, 49)),
+	'coral': (rgba(224, 115, 90, 0.2), rgb(130, 67, 52)),
 );
 
 $notion-dark: (
 	'gray': (rgba(255, 252, 235, 0.306), rgb(240, 239, 237)),
+	'slate': (rgba(148, 163, 184, 0.43), rgb(248, 249, 250)),
 	'brown': (rgba(255, 184, 132, 0.365), rgb(245, 237, 233)),
-	'yellow': (rgba(255, 188, 53, 0.46), rgb(249, 243, 220)),
 	'orange': (rgba(255, 143, 71, 0.482), rgb(251, 235, 222)),
+	'amber': (rgba(224, 164, 58, 0.43), rgb(253, 249, 241)),
+	'yellow': (rgba(255, 188, 53, 0.46), rgb(249, 243, 220)),
+	'olive': (rgba(163, 160, 78, 0.43), rgb(249, 248, 243)),
+	'lime': (rgba(141, 179, 58, 0.43), rgb(247, 250, 241)),
 	'green': (rgba(113, 255, 175, 0.337), rgb(232, 241, 236)),
+	'mint': (rgba(92, 196, 154, 0.43), rgb(244, 251, 248)),
+	'teal': (rgba(74, 168, 158, 0.43), rgb(242, 249, 248)),
+	'cyan': (rgba(79, 179, 209, 0.43), rgb(243, 250, 252)),
+	'sky': (rgba(98, 180, 236, 0.43), rgb(244, 250, 254)),
 	'blue': (rgba(81, 166, 255, 0.494), rgb(229, 242, 252)),
+	'navy': (rgba(106, 134, 192, 0.43), rgb(245, 247, 251)),
+	'indigo': (rgba(123, 132, 224, 0.43), rgb(246, 246, 253)),
+	'violet': (rgba(156, 132, 238, 0.43), rgb(248, 246, 254)),
 	'purple': (rgba(208, 147, 255, 0.427), rgb(243, 235, 249)),
+	'fuchsia': (rgba(208, 106, 214, 0.43), rgb(252, 245, 252)),
 	'pink': (rgba(255, 133, 192, 0.427), rgb(250, 233, 241)),
+	'rose': (rgba(229, 122, 152, 0.43), rgb(253, 246, 248)),
 	'red': (rgba(255, 116, 105, 0.525), rgb(252, 233, 231)),
+	'coral': (rgba(240, 140, 116, 0.43), rgb(254, 247, 245)),
 );
 
 // "r, g, b" of a color, for rgba(var(--x), alpha) in CSS

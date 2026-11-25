@@ -341,7 +341,8 @@
 	border: 1px solid var(--background-modifier-border);
 	border-radius: var(--radius-m);
 	box-shadow: var(--shadow-l);
-	max-width: 160px;
+	// 8 swatches per row, 3 rows for the 23 colors + "no color"
+	max-width: 200px;
 }
 
 // Individual color swatches

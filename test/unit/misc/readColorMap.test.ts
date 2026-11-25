@@ -8,6 +8,11 @@ describe('readColorMap', () => {
 		expect({ ...map }).toEqual({ done: 'green' });
 	});
 
+	it('keeps the extended palette colors (icon hues)', () => {
+		const map = readColorMap({ a: 'teal', b: 'coral', c: 'navy' });
+		expect({ ...map }).toEqual({ a: 'teal', b: 'coral', c: 'navy' });
+	});
+
 	it('reads a value named like an Object property as a plain key', () => {
 		const map = readColorMap(JSON.parse('{"__proto__": "red", "todo": "blue"}'));
 		expect(getColor(map, 'constructor')).toBeNull();
